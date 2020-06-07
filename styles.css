@@ -1,3 +1,48 @@
-body{
-    font-size: 10px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+}
+
+
+
+.header {
+    background-image:url("images/bg-desktop.svg");
+    background-repeat:no-repeat;
+    background-position: bottom;
+    position: relative;
+    height:100vh;
+    background-color:hsl(229, 57%, 11%);
+}
+
+.row{
+    position: absolute;
+    top:40%;
+    left:15%;
+    z-index:2;
+    margin-left: 8rem;
+}
+
+.col-1-of-2 {
+    display:inline-block;
+    background-color:hsl(228, 56%, 26%);
+    vertical-align: bottom;
+}
+.col-1-of-2:not(:last-child){
+    margin-right: 1.5rem;
+}
+#col-1{
+    width:24rem;
+    height:13rem;
+    clip-path: inset(0 0 0 0 round 5% 40% 0 10%);
+}
+#col-2{
+    width:25rem;
+    height:9rem;
+    border-radius: 5%;
 }
