@@ -18,12 +18,13 @@ body {
     position: relative;
     height:100vh;
     background-color:hsl(229, 57%, 11%);
+
 }
 
 .row{
     position: absolute;
-    top:40%;
-    left:15%;
+    top:39%;
+    left:11%;
     z-index:2;
     margin-left: 8rem;
 }
@@ -37,12 +38,101 @@ body {
     margin-right: 1.5rem;
 }
 #col-1{
-    width:24rem;
+    width:20rem;
     height:13rem;
     clip-path: inset(0 0 0 0 round 5% 40% 0 10%);
 }
 #col-2{
-    width:25rem;
-    height:9rem;
+    width:28rem;
+    height:10rem;
     border-radius: 5%;
+}
+
+.logo{
+    margin: 2.5rem;
+}
+.icons{margin-left: 2.5rem;}
+
+.icon{
+    margin-right:1.5rem;
+    background-color:hsl(229, 57%, 11%);
+    padding:.8rem;
+    border-radius: 5px;
+}
+p{
+    color: hsl(243, 100%, 93%);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.5rem;
+}
+span{font-weight: 700;}
+
+.storage{
+    width:20rem;
+    height: 1rem;
+    margin-left: 1.5rem;
+    border-radius: 10px;
+    border: 2.5px solid hsl(229, 57%, 11%);
+    background-image: linear-gradient(to right,   hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+}
+
+h3{
+    display: inline-block;
+    color:hsl(243, 100%, 93%);
+    vertical-align: bottom;
+}
+.empty-storage{
+    margin-left: 1.5rem;
+    margin-top: .5rem;    
+}
+.full-storage{
+    margin-left: 18rem;
+}
+.free-storage{
+    position: absolute;
+    top: 39%;
+    left:60%;
+    z-index: 10;
+    border-radius: 5px;
+    width: 10rem;
+    height: 5rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 99%, 70% 76%, 0% 75%);
+    background-color:hsl(243, 100%, 93%);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align:center;
+}
+@media (max-width: 375px){
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .header{
+        height: 100vh;
+        background-size: cover;
+    }
+    .row{
+        position: absolute;
+        margin-left: 1.5rem;
+        top: 10rem;
+        left: 0;
+        z-index:2;
+    }
+    #col-1{
+        width:20rem;
+        height:13rem;
+        margin-bottom: 2rem;
+    }
+    #col-2{
+        width:20rem;
+        height:10rem;
+    }
+    .free-storage{
+        top: 65%;
+        left: 32%;
+    }
+    .full-storage{
+        margin-left: 12rem;
+    }
+    .storage{width:17rem;}
 }
